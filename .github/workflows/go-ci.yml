@@ -25,12 +25,9 @@ jobs:
 
       - name: Build
         run: go build ./...
-
-      - name: CD
-        run: cd ./...
-
+        
       - name: Run Tests
-        run: go test ./go
+        run: go test ./../go
 
       - name: Lint with GolangCI-Lint
         run: golangci-lint run
