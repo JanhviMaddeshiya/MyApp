@@ -55,7 +55,9 @@ jobs:
         run: echo "PATH=$(go env GOPATH)/bin:\$PATH" >> $GITHUB_ENV
 
       - name: Lint with GolangCI-Lint
-        run: golangci-lint run
+        run: |
+          export PATH=$(go env GOPATH)/bin:$PATH
+          golangci-lint run
 
 
       # - name: Lint with GolangCI-Lint
