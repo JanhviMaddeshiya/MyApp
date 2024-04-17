@@ -32,7 +32,7 @@ jobs:
           cd ..
           ls
           cd MyApp
-          ls
+          ls MyApp
         
       - name: Run Tests
         run: go test .
