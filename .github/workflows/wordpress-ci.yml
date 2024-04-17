@@ -26,6 +26,8 @@ jobs:
           ls
           cd MyApp
           ls
+          cd wordpress
+          ls
 
       - name: Install Composer Dependencies
         run: composer install
