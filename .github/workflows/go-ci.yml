@@ -54,9 +54,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: |
-            janhvimaddeshiya/myapp-go:latest
+        run: |
+          cd ..
+          cd ..
+          ls
+          cd MyApp
+          cd MyApp
+          cd go
+          ls
+          docker build -t janhvimaddeshiya/myapp-go:latest .
+          docker push janhvimaddeshiya/myapp-go:latest

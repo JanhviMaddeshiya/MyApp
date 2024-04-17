@@ -34,7 +34,7 @@ Ensured the Compose file can be used to spin up the entire extended application 
 
 Continuous Deployment
 Extended the CI/CD pipelines to include deployment stages for the Go, Next.js, and WordPress components.
-Set up automatic deployment to a staging environment for successful builds.
+Set up automatic docker image creation and pushed it on my dockerhub.
 
 Documentation
 Updated the README.md file with instructions on setting up and running the extended application locally.
