@@ -35,9 +35,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: |
-            janhvimaddeshiya/myapp-nextjs:latest
+        run: |
+          cd ..
+          cd ..
+          ls
+          cd MyApp
+          cd MyApp
+          cd go
+          ls
+          docker build -t janhvimaddeshiya/myapp-nextjs:latest .
+          docker push janhvimaddeshiya/myapp-nextjs:latest
