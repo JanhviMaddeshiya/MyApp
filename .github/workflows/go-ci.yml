@@ -31,9 +31,10 @@ jobs:
           cd ..
           cd ..
           ls
+          cd MyApp/go
         
       - name: Run Tests
-        run: go test ./...
+        run: go test .
 
       - name: Lint with GolangCI-Lint
         run: golangci-lint run
