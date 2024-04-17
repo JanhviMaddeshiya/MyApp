@@ -20,17 +20,12 @@ jobs:
         with:
           php-version: '7.4'
 
-      - name: Navigate to WordPress directory
+      - name: Install Composer Dependencies
         run: |
           cd ..
-          ls
           cd MyApp
-          ls
           cd wordpress
-          ls
-
-      - name: Install Composer Dependencies
-        run: composer install
+          composer install
 
       - name: Run PHPUnit Tests
         run: vendor/bin/phpunit
