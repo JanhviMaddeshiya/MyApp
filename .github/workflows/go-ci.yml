@@ -26,7 +26,17 @@ jobs:
       - name: Build
         run: go build ./...
 
-      - name: CD
+      # - name: CD
+      #   run: |
+      #     cd ..
+      #     cd ..
+      #     ls
+      #     cd MyApp
+      #     cd MyApp
+      #     cd go
+      #     ls
+        
+      - name: Run Tests
         run: |
           cd ..
           cd ..
@@ -35,9 +45,7 @@ jobs:
           cd MyApp
           cd go
           ls
-        
-      - name: Run Tests
-        run: go test .
+          go test .
 
       - name: Lint with GolangCI-Lint
         run: golangci-lint run
