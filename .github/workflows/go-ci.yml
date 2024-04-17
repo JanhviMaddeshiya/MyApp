@@ -47,16 +47,10 @@ jobs:
           ls
           go test .
 
-      - name: Install golangci-lint
-        run: |
-          wget -O - -q https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.42.1
-
-      - name: Set environment variable for golangci-lint
-        run: echo "PATH=$(go env GOPATH)/bin:\$PATH" >> $GITHUB_ENV
-
-      - name: Lint with GolangCI-Lint
+      - name: Install golangci-lint and run
         run: |
           export PATH=$(go env GOPATH)/bin:$PATH
+          wget -O - -q https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.42.1
           golangci-lint run
 
 
