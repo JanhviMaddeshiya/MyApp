@@ -22,7 +22,7 @@ jobs:
 
       - name: Navigate to WordPress directory
         run: |
-          cd ./...
+          cd ..
           ls
 
       - name: Install Composer Dependencies
