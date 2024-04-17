@@ -21,7 +21,7 @@ jobs:
           go-version: '1.16'
 
       - name: Initialize Go Modules
-        run: go mod init github.com/your-username/MyApp
+        run: go mod init github.com/JanhviMaddeshiya/MyApp
 
       - name: Build
         run: go build ./...
