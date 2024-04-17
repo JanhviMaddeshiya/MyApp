@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   go:
-    image: xflawless/goapp:latest
+    image: janhvimaddeshiya/my-go-app:latest
     ports:
       - "8080:8080"
     environment:
@@ -11,7 +11,7 @@ services:
       - "./go"
 
   nextjs:
-    image: xflawless/nextjs:latest
+    image: janhvimaddeshiya/my-nextjs-app:latest
     ports:
       - "3000:3000"
     environment:
@@ -20,7 +20,7 @@ services:
       - "./nextjs:/app"
 
   wordpress:
-    image: xflawless/wordpress:latest
+    image: janhvimaddeshiya/my-wordpress-app:latest
     ports:
       - "80:80"
     environment:

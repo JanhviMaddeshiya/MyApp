@@ -1,4 +1,4 @@
-FROM wordpress:latest
+FROM wordpress
 WORKDIR /var/www/html
-COPY . wp-content/plugins
+COPY . .
 EXPOSE 80
