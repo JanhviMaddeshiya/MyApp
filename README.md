@@ -1,4 +1,5 @@
 **MyApp** 
+
 This repository includes the implementation of CI/CD pipelines and Dockerized applications for independent components developed in Go, Next.js (TypeScript), and WordPress. Each component has its dedicated CI/CD pipeline to ensure quality, efficiency, and adherence to coding standards.
 
 **Components**
