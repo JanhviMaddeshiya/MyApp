@@ -29,6 +29,7 @@ jobs:
 
       - name: List contents of vendor directory
         run: ls vendor/phpunit/phpunit
+        
 
       - name: Run PHPUnit Tests
         run: vendor/bin/phpunit
