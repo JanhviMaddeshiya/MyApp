@@ -24,6 +24,8 @@ jobs:
         run: |
           cd ..
           ls
+          cd MyApp
+          ls
 
       - name: Install Composer Dependencies
         run: composer install
