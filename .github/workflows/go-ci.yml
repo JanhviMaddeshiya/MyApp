@@ -28,7 +28,8 @@ jobs:
 
       - name: CD
         run: |
-          cd ./...
+          cd ..
+          cd ..
           ls
         
       - name: Run Tests
