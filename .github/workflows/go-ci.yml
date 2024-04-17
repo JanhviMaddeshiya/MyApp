@@ -25,6 +25,11 @@ jobs:
 
       - name: Build
         run: go build ./...
+
+      - name: CD
+        run: |
+          cd ./...
+          ls
         
       - name: Run Tests
         run: go test ./...

@@ -1,10 +1,7 @@
 // main_test.go
 package main
 
-import (
-	"github.com/JanhviMaddeshiya/MyApp/go" // Add this line to import the package to be tested
-	"testing"
-)
+import "testing"
 
 func TestAdd(t *testing.T) {
 	result := add(5, 10)
