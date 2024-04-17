@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: go build ./...
 
+      - name: Navigate to Go Directory
+        run: cd go
+
       - name: Run Tests
         run: go test ./...
 
