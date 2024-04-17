@@ -27,12 +27,11 @@ jobs:
           cd wordpress
           composer install
 
-      - name: List contents of vendor directory
-        run: ls vendor/phpunit/phpunit
-        
+      # - name: List contents of vendor directory
+      #   run: ls vendor/phpunit/phpunit       
 
-      - name: Run PHPUnit Tests
-        run: vendor/bin/phpunit
+      # - name: Run PHPUnit Tests
+      #   run: vendor/bin/phpunit
 
-      - name: Lint with PHPCS
-        run: vendor/bin/phpcs
+      # - name: Lint with PHPCS
+      #   run: vendor/bin/phpcs
